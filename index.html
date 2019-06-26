@@ -20,47 +20,21 @@
 <body>
     
     <div class="container">
-        <h2>Exibir e esconder um item</h2>
-        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#teste" role="button">
-            Exibir/Esconder
-        </button>
-        
-        <div class="collapse" id="teste">
-            Este item começa escondido
-        </div>
+        <h2>Botão com dupla divisão</h2>
 
-        <hr>
-        <h2>Exemplo Accordion</h2><br>
-        <div class="accordion" id="accordion">
-            <div class="card">
-                <div class="card-header">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#c1" aria-controls="c1" >
-                        Titulo do card 1
-                    </button>
-                </div>
-                <div class="collapse show" id="c1" data-parent="#accordion">
-                    <div class="card-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Inventore officiis, reiciendis earum consequuntur officia veritatis, optio,
-                        molestias reprehenderit voluptatem provident tempore.
-                        Mollitia enim error voluptatem dicta, veritatis eum rerum cupiditate.
-                    </div>
-                </div>
-            </div>
+        <div class="dropdown">
 
-            <div class="card">
-                <div class="card-header">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#c2" aria-controls="c2" >
-                        Titulo do card 2
-                    </button>
-                </div>
-                <div class="collapse " id="c2" data-parent="#accordion">
-                    <div class="card-body">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Inventore officiis, reiciendis earum consequuntur officia veritatis, optio,
-                        molestias reprehenderit voluptatem provident tempore.
-                        Mollitia enim error voluptatem dicta, veritatis eum rerum cupiditate.
-                    </div>
+            <div class="btn-group">
+                <a href="https://www.google.com.br" class="btn btn-secondary">Google</a>
+                <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                    data-toggle="dropdown">
+                </button>                
+ 
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Instagram</a>
+                    <a href="#" class="dropdown-item">Facebook</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="#" class="dropdown-item">Tinder</a>
                 </div>
             </div>
         </div>
