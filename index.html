@@ -20,63 +20,63 @@
 <body>
     
     <div class="container">
-        <h2>Exemplo com list group</h2>
 
-        <div class="list-group" style="width: 600px">
-            <a href="#" class="list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Titulo da notícia</h5>
-                    <small>2 dias atrás</small>
+        <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#target" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="target">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button type="button" class="btn nav-link dropdown-toggle" data-toggle="dropdown" role="dropdown" >
+                            Dropdown link
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">item 1</a>
+                            <a href="#" class="dropdown-item">item 2</a>
+                            <div class="dropdown-divider"></div>
+                            <a href="#" class="dropdown-item">outra seção</a>
+                        </div> 
+                    </li>
+                </ul>
+
+                <form class="form-inline my-2 mr-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+
+                <div class="btn-group">
+                    <a href="#" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">Login</a>
+                    <div class="dropdown-menu">
+                        <form action="#" method="post">
+                            <div class="form-group">
+                                <label for="nome">Nome</label>
+                                <input type="text" class="from-control" id="nome" placeholder="Seu nome">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="senha">Senha</label>
+                                <input type="password" class="from-control" id="senha" placeholder="****">
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Entrar</button>
+                        </form>
+                    </div>
+                    <a href="#" class="btn btn-outline-light ml-2">Sair</a>
+ 
                 </div>
-                <p class="mb-1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Modi laudantium minima, obcaecati quia quae nisi numquam,
-                    laboriosam assumenda commodi illo quis! Itaque quod nihil
-                    voluptas! Ipsam alias reprehenderit suscipit quasi.
-                </p>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Titulo da notícia</h5>
-                    <small>2 dias atrás</small>
-                </div>
-                <p class="mb-1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Modi laudantium minima, obcaecati quia quae nisi numquam,
-                    laboriosam assumenda commodi illo quis! Itaque quod nihil
-                    voluptas! Ipsam alias reprehenderit suscipit quasi.
-                </p>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Titulo da notícia</h5>
-                    <small>2 dias atrás</small>
-                </div>
-                <p class="mb-1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Modi laudantium minima, obcaecati quia quae nisi numquam,
-                    laboriosam assumenda commodi illo quis! Itaque quod nihil
-                    voluptas! Ipsam alias reprehenderit suscipit quasi.
-                </p>
-            </a>
-        </div>
-        <br>
-        <div style="width: 600px">
-            <ul class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Cras justo odio
-                    <span class="badge badge-primary badge-pill">14</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Dapibus ac facilisis in
-                    <span class="badge badge-primary badge-pill">2</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                    Morbi leo risus
-                    <span class="badge badge-primary badge-pill">1</span>
-                </li>
-            </ul>
-        </div>
+            </div>
+        </nav>
+
+        <h2 style="margin-top: 100px;">Exemplo com navbar</h2>
     </div>
 
     <script src="./assets/js/jquery.js"></script>
