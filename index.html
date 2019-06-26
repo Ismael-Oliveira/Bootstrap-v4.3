@@ -10,34 +10,60 @@
     <title>Document</title>
 </head>
 
+<style>
+    #teste{
+        border: 1px solid #CCC;
+        background: #EEE;
+    }
+</style>
 
 <body>
     
     <div class="container">
-        <h2>As três formas de se criar botões.</h2>
-        <a class="btn btn-success " href="#">Botton 1</a>
-        <input type="button" class="btn btn-danger" value="Botton 2">
-        <button type="button" class="btn btn-primary">Botton 3</button>
-
-        <hr>
-        <h2>Botton sem fundo</h2>
-        <button type="button" class="btn btn-outline-danger">Danger</button>
-
-        <hr>
-        <h2>Agrupando Bottons</h2>
-        <div class="btn-group">
-            <a class="btn btn-success " href="#">Botton 1</a>
-            <input type="button" class="btn btn-danger" value="Botton 2">
-            <button type="button" class="btn btn-primary">Botton 3</button>
+        <h2>Exibir e esconder um item</h2>
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#teste" role="button">
+            Exibir/Esconder
+        </button>
+        
+        <div class="collapse" id="teste">
+            Este item começa escondido
         </div>
 
         <hr>
-        <h2>Agrupando Bottons na vertical</h2>
-        <div class="btn-group-vertical">
-            <a class="btn btn-success " href="#">Botton 1</a>
-            <input type="button" class="btn btn-danger" value="Botton 2">
-            <button type="button" class="btn btn-primary">Botton 3</button>
-        </div>        
+        <h2>Exemplo Accordion</h2><br>
+        <div class="accordion" id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#c1" aria-controls="c1" >
+                        Titulo do card 1
+                    </button>
+                </div>
+                <div class="collapse show" id="c1" data-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Inventore officiis, reiciendis earum consequuntur officia veritatis, optio,
+                        molestias reprehenderit voluptatem provident tempore.
+                        Mollitia enim error voluptatem dicta, veritatis eum rerum cupiditate.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#c2" aria-controls="c2" >
+                        Titulo do card 2
+                    </button>
+                </div>
+                <div class="collapse " id="c2" data-parent="#accordion">
+                    <div class="card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Inventore officiis, reiciendis earum consequuntur officia veritatis, optio,
+                        molestias reprehenderit voluptatem provident tempore.
+                        Mollitia enim error voluptatem dicta, veritatis eum rerum cupiditate.
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
